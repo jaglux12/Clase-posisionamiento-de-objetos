@@ -5,12 +5,14 @@
 }
 
 .cuadro{
-    border: 10px solid peachpuff;
+    border: 10px solid rgb(7, 7, 7);
+    border-radius: 10px;
     height: 500px;
     width: 500px;
     position: relative;
     left: 50px;
     top: 50px;
+    background-color: black;
 }
 
 .cielo{
@@ -19,90 +21,143 @@
     height:100%;
     position: absolute;
     top: 0;
+    border-radius: 10px;
     z-index: 0;
 }
 
-.pasto{
-    background-color: rgb(75, 182, 75);
+.ruta{
+    background-color: rgb(97, 97, 97);
     width: 100%;
     height: 30%;
     position: absolute;
     bottom: 0;
     z-index: 10;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.nube1, .nube2 , .nube3, .nube4, .nube5{
+    background: #fafafa;
+    border-radius: 50%;
+    z-index: 10;
+    position: absolute;
 }
 
 .nube1{
-    background: #fafafa;
     width: 150px;
     height: 50px;
-    position: absolute;
-    z-index: 10;
     top: 35px;
     left: 85px;
-    border-radius: 50%;
 }
 .nube2{
-    background: #fafafa;
     width: 100px;
     height: 50px;
-    position: absolute;
-    z-index: 10;
     top: 25px;
     left: 45px;
-    border-radius: 50%;
 }
 .nube3{
-    background: #fafafa;
     width: 150px;
     height: 70px;
-    position: absolute;
-    z-index: 10;
     top: 5px;
     left: 95px;
-    border-radius: 50%;
 }
 
-.nube1:hover, .nube2:hover, .nube3:hover{
-    background-color: gray;
+.nube4{
+    width: 150px;
+    height: 70px;
+    top: 5px;
+    right: 20px;
 }
 
-.tronco{
-    background-color: rgb(59, 36, 36);
-    height: 95px;
-    width: 50px;
+.nube5{
+    width: 150px;
+    height: 70px;
+    top: 30px;
+    right: 60px;
+}
+
+.techo{
+    background-color: rgb(255, 45, 45);
+    height: 45px;
+    width: 30%;
     position: absolute;
     z-index: 20;
-    left: 45%;
-    top: 55%;
-}
-
-.copa1{
-    width: 120px;
-    height: 120px;
-    top: 35%;
-    left: 45%;
-    background: green;
-}
-
-.copa2{
-    width: 105px;
-    height: 105px;
-    top: 35%;
     left: 35%;
-    background: green;
+    top: 52%;
+    border-radius: 10px 10px 0px 0px;
 }
 
-.copa3{
-    width: 90px;
-    height: 90px;
-    top: 25%;
-    left: 45%;
-    background: rgb(39, 123, 39);
+.tapa-rueda-1, .tapa-rueda-2{
+    background-color: white;
+    position: absolute;
+    z-index: 31;
+    height: 25px;
+    width: 25px;
+    top: 67.5%;
+    border-radius: 100px;
 }
 
-.copa1, .copa2, .copa3{
-  
+.tapa-rueda-1{
+    left: 27.5%;
+}
+
+.tapa-rueda-2{
+    right: 27.5%;
+}
+
+.rueda1, .rueda2{
+    background-color: rgb(43, 43, 43);
     position: absolute;
     z-index: 30;
     border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 65%;
+}
+
+.rueda1{
+    left: 25%;
+}
+
+.rueda2{
+    right: 25%;
+}
+
+.chasis{
+    background-color: rgb(255, 45, 45);
+    height: 40px;
+    width: 60%;
+    position: absolute;
+    z-index: 20;
+    left: 20%;
+    top: 60%;
+    border-radius: 40px 100px 0px 0px;
+}
+
+.linea-ruta, .linea-ruta1, .linea-ruta2, .linea-ruta3, .linea-ruta4{
+    background-color: rgb(139, 139, 139);
+    position: absolute;
+    z-index: 30;
+    height: 10px;
+    width: 50px;
+    top: 84%;
+}
+
+.linea-ruta{
+    left: 5%;
+}
+
+.linea-ruta1{
+    left: 25%;
+}
+
+.linea-ruta2{
+    left: 45%;
+}
+
+.linea-ruta3{
+    left: 65%;
+}
+
+.linea-ruta4{
+    left: 85%;
 }
