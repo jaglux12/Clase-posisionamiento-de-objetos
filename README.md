@@ -18,7 +18,7 @@ Este ejercicio se realizó buscando lograr dos cosas:
 * Transform: Rotate()
 * Z-index
 
-## Aqui algunas imágenes del resultado final:
-
-#### Terminado
+## Resultado final
 ![](./final.png)
+
+Editado por [jaglux12](https://www.github.com/jaglux12)
