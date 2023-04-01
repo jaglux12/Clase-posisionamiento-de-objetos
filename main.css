@@ -13,6 +13,7 @@
     left: 50px;
     top: 50px;
     background-color: black;
+    overflow: hidden;
 }
 
 .cielo{
@@ -41,38 +42,106 @@
     z-index: 10;
     position: absolute;
 }
-
 .nube1{
     width: 150px;
     height: 50px;
-    top: 35px;
+    top: -100px;
     left: 85px;
+    /** Animaciones **/
+    animation-name: animacion-nube1;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes animacion-nube1{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 40px;
+    }
+}
+
 .nube2{
     width: 100px;
     height: 50px;
-    top: 25px;
+    top: -100px;
     left: 45px;
+    /** Animaciones **/
+    animation-name: animacion-nube2;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes animacion-nube2{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 40px;
+    }
+}
+
 .nube3{
     width: 150px;
     height: 70px;
-    top: 5px;
+    top: -100px;
     left: 95px;
+    animation-name: animacion-nube3;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animacion-nube3{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 10px;
+    }
 }
 
 .nube4{
     width: 150px;
     height: 70px;
-    top: 5px;
+    top: -100px;
     right: 20px;
+    animation-name: animacion-nube4;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animacion-nube4{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 5px;
+    }
 }
 
 .nube5{
     width: 150px;
     height: 70px;
-    top: 30px;
+    top: -100px;
     right: 60px;
+    animation-name: animacion-nube5;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animacion-nube5{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 30px;
+    }
 }
 
 .techo{
@@ -81,9 +150,44 @@
     width: 30%;
     position: absolute;
     z-index: 20;
-    left: 35%;
+    left: -100%;
     top: 52%;
     border-radius: 10px 10px 0px 0px;
+    animation-name: anim-techo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim-techo{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 35%;
+    }
+}
+
+.chasis{
+    background-color: rgb(255, 45, 45);
+    height: 40px;
+    width: 60%;
+    position: absolute;
+    z-index: 20;
+    left: -100%;
+    top: 60%;
+    border-radius: 40px 100px 0px 0px;
+    animation-name: anim-chasis;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim-chasis{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 20%;
+    }
 }
 
 .tapa-rueda-1, .tapa-rueda-2{
@@ -96,12 +200,38 @@
     border-radius: 100px;
 }
 
+
+
 .tapa-rueda-1{
-    left: 27.5%;
+    left: -100%;
+    animation-name: tapa-rueda1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tapa-rueda1{
+    from{
+        left: -100%;
+    }   
+    to{
+        left: 27.5%;
+    }
 }
 
 .tapa-rueda-2{
-    right: 27.5%;
+    left: -100%;
+    animation-name: tapa-rueda2;
+    animation-duration: 1.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tapa-rueda2{
+    from{
+        left: -100%;
+    }   
+    to{
+        left: 67%;
+    }
 }
 
 .rueda1, .rueda2{
@@ -114,23 +244,36 @@
     top: 65%;
 }
 
+@keyframes anim-rueda1{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 25%;
+    }
+}
+
 .rueda1{
-    left: 25%;
+    left: -100%;
+    animation-name: anim-rueda1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 .rueda2{
-    right: 25%;
+    left: -100%;
+    animation-name: anim-rueda2;
+    animation-duration: 1.8s;
+    animation-fill-mode: forwards;
 }
 
-.chasis{
-    background-color: rgb(255, 45, 45);
-    height: 40px;
-    width: 60%;
-    position: absolute;
-    z-index: 20;
-    left: 20%;
-    top: 60%;
-    border-radius: 40px 100px 0px 0px;
+@keyframes anim-rueda2{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 64.5%;
+    }
 }
 
 .linea-ruta, .linea-ruta1, .linea-ruta2, .linea-ruta3, .linea-ruta4{
@@ -160,4 +303,51 @@
 
 .linea-ruta4{
     left: 85%;
+}
+
+
+.edificio1{
+    background-color: rgb(58, 43, 43);
+    width: 70px;
+    height: 230px;
+    position: absolute;
+    top: 25%;
+    right: -100%;
+    border-radius: 10px;
+    animation-name: anim-edificio;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim-edificio{
+    from{
+        right: -100%;
+    }
+    to{
+        right: 110%;
+    }
+}
+
+.edificio2{
+    background-color: rgb(95, 80, 80);
+    width: 70px;
+    height: 100px;
+    position: absolute;
+    top: 55%;
+    right: -100%;
+    border-radius: 10px;
+    animation-name: anim-edificio2;
+    animation-duration: 2s;
+    animation-delay: 7.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim-edificio2{
+    from{
+        right: -100%;
+    }
+    to{
+        right: 110%;
+    }
 }
